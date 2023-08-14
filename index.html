@@ -7,8 +7,8 @@
     <title>To Top</title>
     <style>
 .to-top{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     position: fixed;
     right: 60px;
     bottom: 60px;
@@ -22,11 +22,22 @@
     box-shadow: inset 0 0 10px rgb(157, 21, 21), 0 0 30px rgb(52, 176, 60), 0 0 10px rgb(29, 129, 179), 0 0 10px rgb(47, 29, 179);
     cursor: pointer;
     transform: scale(0);
+    transform: rotate(0) scale(1);
+    transition: 0.5s;
+}
+.to-top:hover {
+    transform: rotate(360deg) scale(0);
 }
 
 .to-top span{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
+    transform: rotate(0) scale(1);
+    transition: 0.5s;
+}
+
+.to-top span:hover {
+    transform: rotate(360deg) scale(0);
 }
 
 *{
